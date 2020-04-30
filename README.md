@@ -3,3 +3,5 @@ This is a simple python script for picking random countries for the game Super P
 
 
 I creates lists of 10 countries for a number of players (user input) while making sure there are no duplicates
+
+note: make sure to download the country list and python file in the same location
