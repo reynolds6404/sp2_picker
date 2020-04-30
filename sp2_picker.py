@@ -2,6 +2,7 @@ import random
 
 countryFile = open('sp2_countries.txt', 'r')
 countryList = countryFile.readlines()
+print(len(countryList)-2)
 numPlayers = input('insert number of players: ')
 
 allchosen = []
@@ -11,7 +12,7 @@ for player in range(int(numPlayers)):
         choice = countryList[random.randint(0, len(countryList)-2)]
         truth = True
         while truth:
-            if(choice in chosen or choice in allchosen):
+            if(choice[0:len(choice)-1] in chosen) or (choice[0:len(choice)-1] in allchosen):
                 choice = countryList[random.randint(0, len(countryList)-2)]
             else:
                 truth = False
