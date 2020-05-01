@@ -13,7 +13,7 @@ async def pick(ctx, *args):
     listArr = sp2p.pick(*argList)
     i=0
     for arg in args:
-        await ctx.send((str(arg) + ': ' + str(listArr[i])))
+        await ctx.send((str(arg) + ':\n' + ('\n'.join(map(str, listArr[i])))))
         i+=1
 
 bot.run('your-bot-token')
