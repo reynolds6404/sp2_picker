@@ -27,4 +27,4 @@ async def pick2(ctx, *args):
                     allchosen.append(choice[0:len(choice)-1])
         await ctx.send((str(arg) + ':\n' + ('\n'.join(map(str, chosen)))))
 
-bot.run('NzA1Nzg0MzEzNDg4MjEyMDY5.XqwxQw.zVNBnio607MeEh1YS3tsO-zAzwQ')
+bot.run('your-bot-token')
